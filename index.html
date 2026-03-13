@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière Noire</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#hero" class="header__logo">Lumière Noire</a>
+    <nav class="header__nav" id="nav">
+      <a href="#studio" class="header__link">Студия</a>
+      <a href="#services" class="header__link">Услуги</a>
+      <a href="#portfolio" class="header__link">Проекты</a>
+      <a href="#about" class="header__link">О нас</a>
+      <a href="#contacts" class="header__link">Контакты</a>
+      <a href="#booking" class="header__link header__link--cta">Забронировать</a>
+    </nav>
+    <button class="header__burger" id="burger" aria-label="Меню">
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <nav class="mobile-menu__nav">
+    <a href="#hero" class="mobile-menu__link">Главная</a>
+    <a href="#studio" class="mobile-menu__link">Студия</a>
+    <a href="#services" class="mobile-menu__link">Услуги</a>
+    <a href="#portfolio" class="mobile-menu__link">Проекты</a>
+    <a href="#booking" class="mobile-menu__link">Бронирование</a>
+    <a href="#about" class="mobile-menu__link">О нас</a>
+    <a href="#contacts" class="mobile-menu__link">Контакты</a>
+  </nav>
+  <div class="mobile-menu__footer">
+    <p>L.noire@yandex.ru</p>
+    <p>+7 911 701 94 90</p>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <video
+      class="hero__video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="auto"
+    >
+      <source src="video/hero.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <p class="hero__subtitle reveal">Фотостудия & продакшн</p>
+    <h1 class="hero__title reveal">
+      <span>Lumiere</span>
+      <span>Noire</span>
+      <span class="hero__title-studio">Studio</span>
+    </h1>
+    <p class="hero__desc reveal">
+      Пространство для съёмок и мероприятий.<br>
+      Авангардная эстетика в каждом кадре.
+    </p>
+    <a href="#booking" class="btn hero__btn reveal">Забронировать студию</a>
+  </div>
+  <div class="hero__scroll">
+    <span>Scroll</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- PROJECTS PREVIEW -->
+<section class="projects-preview" id="projects-preview">
+  <div class="container">
+    <div class="pp-header reveal">
+      <span class="section-label">Избранное</span>
+      <h2 class="section-title">Проекты</h2>
+    </div>
+  </div>
+  <div class="pp-grid">
+    <a href="#portfolio" class="pp-card pp-card--large reveal">
+      <div class="pp-card__img">
+        <img src="https://lh3.googleusercontent.com/d/1QLApoPUCz7CXZb1dA-7s9Fxq3HE7_eMs" alt="Фотопродакшн" loading="lazy">
+      </div>
+      <div class="pp-card__overlay"></div>
+      <div class="pp-card__content">
+        <span class="pp-card__num">01</span>
+        <div class="pp-card__bottom">
+          <span class="pp-card__cat">Съемка</span>
+          <h3 class="pp-card__title">Тёмные ангелы</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="#portfolio" class="pp-card reveal">
+      <div class="pp-card__img">
+        <img src="https://lh3.googleusercontent.com/d/1Jme1fU1aVxwIPFsPcuNsMH80VumeBpDj" alt="Арт-проект" loading="lazy">
+      </div>
+      <div class="pp-card__overlay"></div>
+      <div class="pp-card__content">
+        <span class="pp-card__num">02</span>
+        <div class="pp-card__bottom">
+          <span class="pp-card__cat">Съемка</span>
+          <h3 class="pp-card__title">Двуликий</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="#portfolio" class="pp-card reveal">
+      <div class="pp-card__img">
+        <img src="https://lh3.googleusercontent.com/d/1izLZ93p2JbgkiXnVVkprgQapxHJ0Kz4V" alt="Портрет" loading="lazy">
+      </div>
+      <div class="pp-card__overlay"></div>
+      <div class="pp-card__content">
+        <span class="pp-card__num">03</span>
+        <div class="pp-card__bottom">
+          <span class="pp-card__cat">Проект</span>
+          <h3 class="pp-card__title">Падение Тени</h3>
+        </div>
+      </div>
+    </a>
+
+    <a href="#portfolio" class="pp-card pp-card--wide reveal">
+      <div class="pp-card__img">
+        <img src="https://lh3.googleusercontent.com/d/1xLr7j_UpP4mnA_f1fm49_TGSpHONb090" alt="Крылья" loading="lazy">
+      </div>
+      <div class="pp-card__overlay"></div>
+      <div class="pp-card__content">
+        <span class="pp-card__num">04</span>
+        <div class="pp-card__bottom">
+          <span class="pp-card__cat">Съемка</span>
+          <h3 class="pp-card__title">FOR AURRUM</h3>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- STUDIO -->
+<section class="studio" id="studio">
+  <div class="studio__header">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Пространство</span>
+        <h2 class="section-title">Студия</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="studio__hero reveal">
+    <div class="img-wrapper">
+      <div class="img-placeholder img-placeholder--wide">
+        <img src="https://lh3.googleusercontent.com/d/17V8BdxpYxJYALTZx3M6lFihZD0rDNkTk" alt="Панорама студии" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="studio__intro reveal">
+      <div class="studio__intro-text">
+        <p class="text-large">Lumière Noire — это не просто фотостудия. Это арт-пространство, где каждая деталь продумана для создания визуального искусства.</p>
+      </div>
+      <div class="studio__intro-details">
+        <div class="studio__stat">
+          <span class="studio__stat-num">120</span>
+          <span class="studio__stat-label">м² площадь</span>
+        </div>
+        <div class="studio__stat">
+          <span class="studio__stat-num">4.5</span>
+          <span class="studio__stat-label">м высота потолков</span>
+        </div>
+        <div class="studio__stat">
+          <span class="studio__stat-num">∞</span>
+          <span class="studio__stat-label">возможности</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="studio__objects">
+    <div class="container">
+      <h3 class="studio__objects-title reveal">Объекты студии</h3>
+      <div class="studio__objects-grid">
+        <div class="studio__object reveal">
+          <div class="img-wrapper">
+            <div class="img-placeholder">
+              <img src="https://lh3.googleusercontent.com/d/1RPFJSsFFRatvFcMW40-HDXPtZlNPqvr3" alt="Кровать" loading="lazy">
+            </div>
+          </div>
+          <span class="studio__object-name">Кровать</span>
+        </div>
+
+        <div class="studio__object reveal">
+          <div class="img-wrapper">
+            <div class="img-placeholder img-placeholder--tall">
+              <img src="https://lh3.googleusercontent.com/d/1uA3_6LW36X47BuFi2ZwhtPUDkO7n_NdX" alt="Чёрная люстра" loading="lazy">
+            </div>
+          </div>
+          <span class="studio__object-name">Чёрная люстра</span>
+        </div>
+
+        <div class="studio__object reveal">
+          <div class="img-wrapper">
+            <div class="img-placeholder">
+              <img src="https://lh3.googleusercontent.com/d/1SeSsNJ7qb4Mybax5mka8mG7SOTrOjd0D" alt="Арт-объекты" loading="lazy">
+            </div>
+          </div>
+          <span class="studio__object-name">Крылья</span>
+        </div>
+
+        <div class="studio__object reveal">
+          <div class="img-wrapper">
+            <div class="img-placeholder img-placeholder--tall">
+              <img src="https://lh3.googleusercontent.com/d/1Xq7e0zx27ilXWYpB5qbWJy35U3ea5XrE" alt="Фактуры и материалы" loading="lazy">
+            </div>
+          </div>
+          <span class="studio__object-name">Фактура</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="studio__atmosphere">
+    <div class="container">
+      <div class="studio__atm-grid">
+        <div class="studio__atm-text reveal">
+          <h3>Атмосфера</h3>
+          <p>Тёмные тона, художественный свет, авангардные объекты — каждый элемент пространства создаёт уникальную среду для фото и видео.</p>
+          <p>Студия работает с естественным и искусственным светом, позволяя реализовать любую визуальную концепцию.</p>
+        </div>
+        <div class="studio__atm-images reveal">
+          <div class="img-wrapper">
+            <div class="img-placeholder">
+              <img src="https://lh3.googleusercontent.com/d/1_GOwu83Nw80w8IasLKatUdFqMkLTlDnk" alt="Атмосфера студии" loading="lazy">
+            </div>
+          </div>
+          <div class="img-wrapper">
+            <div class="img-placeholder">
+              <img src="https://lh3.googleusercontent.com/d/1jKkVR0U3E-kkfFJkDqSk_reR-E6LcAlk" alt="Атмосфера студии" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header services__toggle-header reveal" id="servicesToggle">
+      <span class="section-label">Направления</span>
+      <div class="services__header-row">
+        <h2 class="section-title">Услуги</h2>
+        <span class="services__header-icon">+</span>
+      </div>
+    </div>
+
+    <div class="services__list-wrap" id="servicesListWrap">
+      <div class="services__list">
+        <a href="#booking" class="services__item">
+          <span class="services__num">01</span>
+          <h3 class="services__name">Аренда фотостудии</h3>
+          <span class="services__arrow">→</span>
+        </a>
+
+        <div class="services__item services__item--expand" id="creativeExpand">
+          <span class="services__num">02</span>
+          <div class="services__expand-wrap">
+            <div class="services__expand-header">
+              <h3 class="services__name">Creative Production</h3>
+              <span class="services__toggle">+</span>
+            </div>
+            <div class="services__sub">
+              <span>• set design</span>
+              <span>• art direction</span>
+              <span>• video production</span>
+              <span>• photo production</span>
+              <span>• sound design</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#booking" class="services__item">
+          <span class="services__num">03</span>
+          <h3 class="services__name">Аренда одежды (скоро) </h3>
+          <span class="services__arrow">→</span>
+        </a>
+
+        <a href="#booking" class="services__item">
+          <span class="services__num">04</span>
+          <h3 class="services__name">Керамика (скоро)</h3>
+          <span class="services__arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Портфолио</span>
+      <h2 class="section-title">Проекты</h2>
+    </div>
+
+    <div class="portfolio__filters reveal">
+      <button class="portfolio__filter active" data-filter="all">Все</button>
+      <button class="portfolio__filter" data-filter="photo">Фото</button>
+      <button class="portfolio__filter" data-filter="video">Видео</button>
+      <button class="portfolio__filter" data-filter="commercial">Коммерческие</button>
+      <button class="portfolio__filter" data-filter="art">Арт</button>
+      <button class="portfolio__filter" data-filter="exhibition">Выставки</button>
+    </div>
+
+    <div class="portfolio__grid">
+      <div class="portfolio__item reveal" data-category="photo">
+        <div class="img-wrapper">
+          <div class="img-placeholder img-placeholder--tall">
+            <img src="https://lh3.googleusercontent.com/d/1ufbIoSboyswGjtNrY5-4QPHqe_rsGiKm" alt="Фотопроект" loading="lazy">
+          </div>
+        </div>
+        <div class="portfolio__item-info"><h4>Название проекта</h4><span>2025</span></div>
+      </div>
+
+      <div class="portfolio__item reveal" data-category="video">
+        <div class="portfolio__video-wrap">
+          <iframe src="https://drive.google.com/file/d/1wtz4_Gvfj8UqBpPaIgxTMqTpPlZ6QALE/preview" allow="autoplay; encrypted-media" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="portfolio__item-info"><h4>Название проекта</h4><span>Видеопроект, 2024</span></div>
+      </div>
+
+      <div class="portfolio__item reveal" data-category="commercial">
+        <div class="img-wrapper">
+          <div class="img-placeholder img-placeholder--tall">
+            <img src="https://lh3.googleusercontent.com/d/1EpseRaOohZeZvFDJpjIdgycTWXThw5NQ" alt="Коммерческий проект" loading="lazy">
+          </div>
+        </div>
+        <div class="portfolio__item-info"><h4>Название проекта</h4><span>Коммерческий, 2024</span></div>
+      </div>
+
+      <div class="portfolio__item reveal" data-category="art">
+        <div class="img-wrapper">
+          <div class="img-placeholder">
+            <img src="https://lh3.googleusercontent.com/d/1SeSsNJ7qb4Mybax5mka8mG7SOTrOjd0D" alt="Арт-проект" loading="lazy">
+          </div>
+        </div>
+        <div class="portfolio__item-info"><h4>Название проекта</h4><span>Арт-проект, 2024</span></div>
+      </div>
+
+      <div class="portfolio__item reveal" data-category="photo">
+        <div class="img-wrapper">
+          <div class="img-placeholder img-placeholder--tall">
+            <img src="https://lh3.googleusercontent.com/d/1izLZ93p2JbgkiXnVVkprgQapxHJ0Kz4V" alt="Фотопроект" loading="lazy">
+          </div>
+        </div>
+        <div class="portfolio__item-info"><h4>Название проекта</h4><span>Фотопроект, 2024</span></div>
+      </div>
+
+      <div class="portfolio__item reveal" data-category="exhibition">
+        <div class="img-wrapper">
+          <div class="img-placeholder">
+            <img src="https://lh3.googleusercontent.com/d/1KjCr6GaGC11KGEB7kYJrXiw9rdKGYjy0" alt="Выставка" loading="lazy">
+          </div>
+        </div>
+        <div class="portfolio__item-info"><h4>Название проекта</h4><span>Выставка, 2024</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+  <div class="container">
+    <div class="booking__grid">
+      <div class="booking__info reveal">
+        <span class="section-label">Бронирование</span>
+        <h2 class="section-title">Забронировать<br>студию</h2>
+        <div class="booking__price-block">
+          <span class="booking__price-label">Аренда студии</span>
+          <span class="booking__price-value">от 3 000 ₽/час</span>
+        </div>
+
+        <div class="booking__details">
+          <div class="booking__detail">
+            <h4>В стоимость входит</h4>
+            <p>Пространство, базовый свет, реквизит студии</p>
+          </div>
+        </div>
+
+        <h4 class="booking__extras-title">Дополнительно</h4>
+        <ul class="booking__extras">
+          <li><span class="extra-name">C-Stand с журавлём + Amaran 200x + октабокс Aputure Light Dome II 90 cm + стойка</span><span class="extra-price">1 100 ₽</span></li>
+          <li><span class="extra-name">Генератор дыма Akenori 1500 Вт</span><span class="extra-price">1 000 ₽/съёмка</span></li>
+          <li><span class="extra-name">Генератор снега Malanbao</span><span class="extra-price">2 000 ₽/съёмка</span></li>
+          <li><span class="extra-name">Создание декораций под ключ</span><span class="extra-price">от 5 000 ₽</span></li>
+          <li><span class="extra-name">Сет восковых свечей</span><span class="extra-price">1 000 ₽/съёмка</span></li>
+          <li><span class="extra-name">Авторский гардероб</span><span class="extra-price">от 1 000 ₽/съёмка</span></li>
+          <li><span class="extra-name">Отпариватель</span><span class="extra-price">500 ₽</span></li>
+        </ul>
+      </div>
+
+      <div class="booking__flow reveal">
+        <div class="booking__steps">
+          <div class="booking__step active" data-step="1">
+            <span class="step-num">1</span><span class="step-label">Дата</span>
+          </div>
+          <div class="booking__step-line"></div>
+          <div class="booking__step" data-step="2">
+            <span class="step-num">2</span><span class="step-label">Время</span>
+          </div>
+          <div class="booking__step-line"></div>
+          <div class="booking__step" data-step="3">
+            <span class="step-num">3</span><span class="step-label">Контакт</span>
+          </div>
+        </div>
+
+        <div class="booking__step-content" id="stepCalendar">
+          <h3 class="booking__step-title">Выберите дату</h3>
+          <div class="calendar" id="calendar">
+            <div class="calendar__header">
+              <button class="calendar__nav" id="calPrev">&#8592;</button>
+              <span class="calendar__month" id="calMonth"></span>
+              <button class="calendar__nav" id="calNext">&#8594;</button>
+            </div>
+            <div class="calendar__weekdays">
+              <span>Пн</span><span>Вт</span><span>Ср</span>
+              <span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+            </div>
+            <div class="calendar__days" id="calDays"></div>
+          </div>
+          <div class="calendar__legend">
+            <span class="legend-item"><i class="legend-dot legend-dot--free"></i> Свободно</span>
+            <span class="legend-item"><i class="legend-dot legend-dot--partial"></i> Мало мест</span>
+            <span class="legend-item"><i class="legend-dot legend-dot--full"></i> Занято</span>
+          </div>
+        </div>
+
+        <div class="booking__step-content booking__step-content--hidden" id="stepTime">
+          <button class="booking__back" id="backToCalendar">&#8592; Изменить дату</button>
+          <h3 class="booking__step-title" id="timeStepTitle">Выберите время начала</h3>
+          <p class="booking__selected-date" id="selectedDateDisplay"></p>
+          <div id="timeSlots"></div>
+          <p class="booking__note">Сначала выберите начало, затем конец. Минимум — 1 час.</p>
+        </div>
+
+        <div class="booking__step-content booking__step-content--hidden" id="stepForm">
+          <button class="booking__back" id="backToTime">&#8592; Изменить время</button>
+          <h3 class="booking__step-title">Контактные данные</h3>
+          <p class="booking__selected-info" id="selectedInfoDisplay"></p>
+          <form class="booking__form" id="bookingForm">
+            <input type="hidden" name="access_key" value="9f6b060c-94e5-4b7a-9243-cc51e3cc97fb">
+            <input type="hidden" name="from_name" value="Lumière Noire — Сайт">
+            <input type="hidden" name="subject" id="formSubject" value="Новое бронирование — Lumière Noire">
+            <input type="hidden" name="date" id="formDate">
+            <input type="hidden" name="time" id="formTime">
+
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Ваше имя" required>
+            </div>
+
+            <div class="form-group">
+              <input type="text" name="contact" placeholder="Телефон или Telegram (@username)" required>
+            </div>
+
+            <div class="form-group">
+              <select name="service" required>
+                <option value="" disabled selected>Тип съёмки / мероприятия</option>
+                <option value="rent">Аренда студии</option>
+                <option value="event">Мероприятие</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <p class="extras-check-label">Дополнительное оборудование</p>
+              <label class="extra-checkbox"><input type="checkbox" name="extras[]" value="C-Stand + Amaran 200x + октабокс — 1 100 ₽"> C-Stand + Amaran 200x + октабокс — <strong>1 100 ₽</strong></label>
+              <label class="extra-checkbox"><input type="checkbox" name="extras[]" value="Генератор дыма — 1 000 ₽"> Генератор дыма Akenori — <strong>1 000 ₽</strong></label>
+              <label class="extra-checkbox"><input type="checkbox" name="extras[]" value="Генератор снега — 2 000 ₽"> Генератор снега Malanbao — <strong>2 000 ₽</strong></label>
+              <label class="extra-checkbox"><input type="checkbox" name="extras[]" value="Свечи — 1 000 ₽"> Сет восковых свечей — <strong>1 000 ₽</strong></label>
+              <label class="extra-checkbox"><input type="checkbox" name="extras[]" value="Гардероб — от 1 000 ₽"> Авторский гардероб — <strong>от 1 000 ₽</strong></label>
+              <label class="extra-checkbox"><input type="checkbox" name="extras[]" value="Отпариватель — 500 ₽"> Отпариватель — <strong>500 ₽</strong></label>
+            </div>
+
+            <div class="form-group">
+              <textarea name="message" placeholder="Расскажите о проекте (опционально)" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--full" id="bookingSubmitBtn">Отправить заявку</button>
+            <p class="booking__privacy">Мы свяжемся с вами для подтверждения. Предоплата не требуется.</p>
+          </form>
+        </div>
+
+        <div class="booking__success booking__success--hidden" id="bookingSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Заявка отправлена</h3>
+          <p>Мы свяжемся с вами в течение часа для подтверждения брони.</p>
+          <button class="btn btn--outline" id="newBookingBtn">Новая заявка</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about__grid">
+      <div class="about__image reveal">
+        <div class="img-wrapper">
+          <div class="img-placeholder img-placeholder--tall">
+            <img src="https://lh3.googleusercontent.com/d/1D1AshiSG197G9XLgj_JqzxyZ2HuIwYPd" alt="О нас" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content reveal">
+        <span class="section-label">О нас</span>
+        <h2 class="section-title">Философия</h2>
+        <p class="text-large">Lumière Noire — это пространство, где свет рождается из тьмы, а каждый кадр становится произведением искусства.</p>
+        <p>Мы создали студию для тех, кто ищет не просто фон для съёмки, а полноценную среду для визуального высказывания.</p>
+        <p>Мы не похожи на обычные фотостудии. У нас нет белых стен и стандартных фонов. Вместо этого — авангардные объекты, художественный свет и атмосфера, которая вдохновляет.</p>
+        <div class="about__signature">
+          <span>Lumière Noire</span>
+          <span>Studio founded in 2025</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts" id="contacts">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Связаться</span>
+      <h2 class="section-title">Контакты</h2>
+    </div>
+
+    <div class="contacts__grid">
+      <div class="contacts__info reveal">
+        <div class="contacts__block"><h4>Адрес</h4><p>Кожевенная линия 34<br>Санкт-Петербург</p></div>
+        <div class="contacts__block"><h4>Телефон</h4><p><a href="tel:+79117019490">+7 911 701 94 90</a></p></div>
+        <div class="contacts__block"><h4>Email</h4><p><a href="mailto:L.noire@yandex.ru">L.noire@yandex.ru</a></p></div>
+        <div class="contacts__block"><h4>VK</h4><p><a href="https://vk.ru/lumiere34" target="_blank" rel="noopener">VK</a></p></div>
+        <div class="contacts__block"><h4>Avito</h4><p><a href="https://www.avito.ru/sankt-peterburg/predlozheniya_uslug/arenda_fotostudii_7280072402" target="_blank" rel="noopener">Avito</a></p></div>
+        <div class="contacts__block"><h4>Время работы</h4><p>Ежедневно, 10:00 — 22:00</p></div>
+      </div>
+
+      <div class="contacts__form-wrapper reveal">
+        <h3>Написать нам</h3>
+        <form class="contacts__form" id="contactForm">
+          <div class="form-group"><input type="text" name="name" placeholder="Ваше имя" required></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Email" required></div>
+          <div class="form-group"><textarea name="message" placeholder="Сообщение" rows="4" required></textarea></div>
+          <button type="submit" class="btn btn--full">Отправить</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="contacts__map reveal">
+      <div class="img-placeholder img-placeholder--map">[ КАРТА — вставь iframe Яндекс.Карт или Google Maps ]</div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__logo">Lumière Noire</div>
+      <div class="footer__links">
+        <a href="#studio">Студия</a>
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Проекты</a>
+        <a href="#booking">Бронирование</a>
+        <a href="#contacts">Контакты</a>
+      </div>
+      <div class="footer__copy">
+        <p>© 2025 Lumière Noire. Все права защищены.</p>
+        <p class="footer__founded">Studio founded in 2025 · Saint Petersburg</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
